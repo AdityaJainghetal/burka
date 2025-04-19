@@ -2,7 +2,7 @@ import axios from "axios"
 
 // const API = axios.create({ baseURL: "https://qr-scanner-server.onrender.com" })
 
-const API = axios.create({ baseURL: "http://localhost:8080/" })
+const API = axios.create({ baseURL: "https://burka.onrender.com/" })
 
 export const addProduct = (productData) => API.post("/product", productData)
 export const fetchProducts = () => API.get("/product")

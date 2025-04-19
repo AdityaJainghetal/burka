@@ -47,7 +47,7 @@ const ProductList = () => {
   const addToCart = async (productId) => {
     setAddingToCart((prev) => ({ ...prev, [productId]: true }))
     try {
-      await fetch(`http://localhost:8080/cart/add/${productId}`, {
+      await fetch(`https://burka.onrender.com/cart/add/${productId}`, {
         method: "POST",
       })
       await fetchCart()
